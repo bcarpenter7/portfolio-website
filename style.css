@@ -1,0 +1,125 @@
+:root {
+    --dark : rgb(18, 25, 52);
+    --orange : rgb(255, 154, 45);
+    --greenBlue : rgb(175, 214, 230);
+    --darkerBlue : rgb(126, 175, 239);
+
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    background-color: rgb(18, 25, 52);
+}
+
+
+.container {
+    width: 95vmin;
+    margin: 0 auto;
+    padding-top: 15vmin;
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    background-color: rgb(0, 25, 52, 1);
+    width: 100%;
+    height: 7vmin;
+    gap: 5vmin;
+    justify-content: left;
+    align-items: center;
+    padding: 1vmin 0;
+
+}
+
+/* div holding education etc */
+#links {
+    margin-left: 52vmin;
+    display: flex;
+    flex-direction: row;
+    gap: 5vmin;
+    text-align: center;
+    /* margin: 0 auto; */
+}
+#nav-bar > a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* education, experience, projects */
+#nav-bar > #links > a {
+    color: white;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+#welcomeDiv {
+    color: white;
+    display: flex;
+    padding-top: 15vmin;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#imgDiv {
+    width: 80vmin;
+    height: 80vmin;
+    margin-right: 20vmin;
+}
+
+#imgDiv > img {
+    width: 80vmin;
+    height: 80vmin;
+}
+
+#nameDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 1vmin;
+    justify-content: start;
+    padding-top: 9vmin;
+    margin-left: 20vmin;
+}
+
+#nameDiv > h1 {
+    font-size: 8vmin;
+}
+
+#nameDiv > h2 {
+    font-size: 4vmin;
+}
+
+#nameDiv > p {
+    color: rgb(194, 193, 193);
+    font-size: 2.2vmin;
+}
+
+#nameDiv > button {
+    width: 14vmin;
+    border-radius: 500px;
+    background-color: var(--greenBlue);
+    border: none;
+    color: var(--dark);
+    padding: 1vmin;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+/* #circle {
+    background-color: #b3cdd6;
+    z-index: 4;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #b3cdd6;
+    text-decoration: none;
+    font-style: none;
+    margin-left: 20px;
+  } */
