@@ -67,6 +67,7 @@
     margin: 0 auto;
     width: 100%;
     justify-content: space-between;
+    padding-bottom: 5vmin;
 }
 
 #imgDiv {
@@ -118,10 +119,11 @@
 
 
 /* ABOUT ME SECTION  */
-#aboutMeStart {
+#aboutMeTitle {
     color: white;
     text-align: center;
     margin-bottom: 5vmin;
+    font-size: 4vmin;
 }
 
 #aboutMe {
@@ -166,6 +168,7 @@ text-align: center;
 #myWorkTitle {
     color: white;
     text-align: left;
+    font-size: 8vmin;
 }
 
 #myWorkDiv {
@@ -184,4 +187,20 @@ text-align: center;
     justify-content: start;
     padding-top: 9vmin;
     margin-left: 20vmin;
+}
+
+#workExample {
+    margin-right: 40vmin;
+    padding-top: 14vmin;
+}
+
+#workExample > img {
+    width: 50vmin;
+}
+
+/* Projects */
+
+#projectDiv {
+    display: flex;
+    
 }
