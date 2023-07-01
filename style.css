@@ -19,7 +19,7 @@
 .container {
     width: 95vmin;
     margin: 0 auto;
-    padding-top: 15vmin;
+
 }
 
 #nav-bar {
@@ -58,6 +58,8 @@
     text-transform: lowercase;
 }
 
+
+/*  FIRST SECTION */
 #welcomeDiv {
     color: white;
     display: flex;
@@ -75,7 +77,7 @@
 
 #imgDiv > img {
     width: 80vmin;
-    height: 80vmin;
+    height: 70vmin;
 }
 
 #nameDiv {
@@ -93,6 +95,7 @@
 
 #nameDiv > h2 {
     font-size: 4vmin;
+    margin-bottom: 1vmin;
 }
 
 #nameDiv > p {
@@ -108,18 +111,77 @@
     color: var(--dark);
     padding: 1vmin;
     font-weight: bolder;
+    font-size: 1.8vmin;
     letter-spacing: 1px;
+    margin-top: 1vmin;
 }
 
-/* #circle {
-    background-color: #b3cdd6;
-    z-index: 4;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    color: #b3cdd6;
-    text-decoration: none;
-    font-style: none;
-    margin-left: 20px;
-  } */
+
+/* ABOUT ME SECTION  */
+#aboutMeStart {
+    color: white;
+    text-align: center;
+    margin-bottom: 5vmin;
+}
+
+#aboutMe {
+    display: flex;
+    gap: 5vmin;
+}
+
+#imgCard {
+    background-color: var(--greenBlue);
+    width: 35vmin;
+    border-radius: 10px;
+    height: 43vmin;
+
+}
+
+#imgCard > div > * {
+font-size: 2.2vmin;
+background-color: var(--greenBlue);
+text-align: center;
+}
+
+#imgCard > div > h2 {
+    padding-top: 1vmin;
+}
+
+#imgCard > div > p {
+    font-size: 2vmin;
+}
+
+#imgCard > img {
+   width: 35vmin;
+   border-radius: 10px 10px 0 0;
+}
+
+#bio > p {
+    color: white;
+    font-size: 2.2vmin;
+}
+
+/* My Work */
+
+#myWorkTitle {
+    color: white;
+    text-align: left;
+}
+
+#myWorkDiv {
+    color: white;
+    display: flex;
+    padding-top: 15vmin;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#work {
+    display: flex;
+    flex-direction: column;
+    gap: 1vmin;
+    justify-content: start;
+    padding-top: 9vmin;
+    margin-left: 20vmin;
+}
