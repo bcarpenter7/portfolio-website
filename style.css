@@ -3,6 +3,7 @@
     --orange : rgb(255, 154, 45);
     --greenBlue : rgb(175, 214, 230);
     --darkerBlue : rgb(126, 175, 239);
+    --blue: rgb(50, 55, 119);
 
 }
 
@@ -132,7 +133,7 @@
 }
 
 #imgCard {
-    background-color: var(--greenBlue);
+    background-color: var(--blue);
     width: 35vmin;
     border-radius: 10px;
     height: 43vmin;
@@ -140,8 +141,9 @@
 }
 
 #imgCard > div > * {
+color: white;
 font-size: 2.2vmin;
-background-color: var(--greenBlue);
+background-color: var(--blue);
 text-align: center;
 }
 
@@ -209,27 +211,46 @@ text-align: center;
 }
 
 .project-divs {
-    width: 32vmin;
-    background-color: gray;
+    width: 34vmin;
+    height: 40vmin;
+    background-color: var(--blue);
     border-radius: 5px;
+    overflow: hidden;
 }
 
 .project-divs > h3 {
     color:white;
-    background-color: gray;
+    background-color: var(--blue);
     height: 3vmin;
+    padding-top: 1vmin;
+    margin-left: 2vmin;
     /* border-radius: 0 0 5px 5px; */
 }
 
 .project-divs > h4 {
     color:white;
-    background-color: gray;
+    background-color: var(--blue);
     height: 3vmin;
     border-radius: 0 0 5px 5px;
+    margin-left: 2vmin;
+    padding-bottom: 1vmin;
 }
 
-.project-divs > img {
-    width: 32vmin;
+.img-parent {
+    width: 34vmin;
+    background-color: var(--blue);
+    /* border-radius: 5px; */
+    overflow: hidden;
+}
+
+.project-divs > .img-parent > img {
+    width: 100%;
     height: 32vmin;
     border-radius: 5px 5px 0 0;
+    transition: 0.5s all ease-in-out;
+}
+
+
+.project-divs:hover .project-img {
+    transform: scale(1.1);
 }
