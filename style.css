@@ -219,6 +219,11 @@ text-align: center;
     font-size: 2.2vmin;
 }
 
+
+
+
+
+
 /* My Work */
 
 #myWorkTitle {
@@ -235,6 +240,26 @@ text-align: center;
     width: 100%;
     justify-content: space-between;
 }
+
+.hidden {
+    opacity: .2;
+}
+
+@keyframes fadeEnter {
+    0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .fadeAnimation {
+      animation: fadeEnter 3s 1;
+      animation-fill-mode: forwards;
+    }
+  }
 
 #work {
     display: flex;
