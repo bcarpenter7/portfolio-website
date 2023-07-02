@@ -97,31 +97,35 @@
 
 #nameDiv > h1 {
     font-size: 8vmin;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+
+    /* -webkit-animation: fadeInStill 2s;
+    -moz-animation: fadeInStill 2s;
+    -o-animation: fadeInStill 2s;
+    -ms-animation: fadeInStill 2s; */
+}
+
+#nameDiv > h2 {
+    font-size: 4vmin;
+    margin-bottom: 1vmin;
     animation: fadeIn 2s;
+    animation-delay: 1s;
     -webkit-animation: fadeIn 2s;
     -moz-animation: fadeIn 2s;
     -o-animation: fadeIn 2s;
     -ms-animation: fadeIn 2s;
 }
 
-#nameDiv > h2 {
-    font-size: 4vmin;
-    margin-bottom: 1vmin;
-    animation: fadeIn 3s;
-    -webkit-animation: fadeIn 3s;
-    -moz-animation: fadeIn 3s;
-    -o-animation: fadeIn 3s;
-    -ms-animation: fadeIn 3s;
-}
-
 #nameDiv > p {
     color: rgb(194, 193, 193);
     font-size: 2.2vmin;
-    animation: fadeIn 5s;
-    -webkit-animation: fadeIn 5s;
-    -moz-animation: fadeIn 5s;
-    -o-animation: fadeIn 5s;
-    -ms-animation: fadeIn 5s;
+    animation-name: fadeInStill;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
 
@@ -130,9 +134,21 @@
         opacity: 0;
         transform: translate(0, -2vmin)
     }
+    20% {
+        opacity: 0;
+    }
     100% {
         opacity: 1;
         transform: translate(0, 0vmin)
+    }
+}
+
+@keyframes fadeInStill {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
 
