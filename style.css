@@ -128,7 +128,7 @@
 
 #aboutMe {
     display: flex;
-    gap: 5vmin;
+    gap: 10vmin;
 }
 
 #imgCard {
@@ -202,5 +202,34 @@ text-align: center;
 
 #projectDiv {
     display: flex;
-    
+    gap: 10vmin;  
+    justify-content: center;
+    margin-top: 10vmin;
+    /* background-color: gray; */
+}
+
+.project-divs {
+    width: 32vmin;
+    background-color: gray;
+    border-radius: 5px;
+}
+
+.project-divs > h3 {
+    color:white;
+    background-color: gray;
+    height: 3vmin;
+    /* border-radius: 0 0 5px 5px; */
+}
+
+.project-divs > h4 {
+    color:white;
+    background-color: gray;
+    height: 3vmin;
+    border-radius: 0 0 5px 5px;
+}
+
+.project-divs > img {
+    width: 32vmin;
+    height: 32vmin;
+    border-radius: 5px 5px 0 0;
 }
