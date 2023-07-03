@@ -17,4 +17,21 @@ const observer = new IntersectionObserver(entries => {
 })
 
 observer.observe(document.querySelector('.hidden'))
-console.log('hello world')
+
+const observerTwo = new IntersectionObserver(entries => {
+    
+    entries.forEach(entry => {
+
+        if(entry.isIntersecting){
+            // const projectSection = e.target.querySelector('.hidden')
+            entry.target.classList.add('fadeAnimation')
+            // entry.target.classList.remove('hidden')
+            // e.target.classList.remove('hidden')
+            return
+        }
+        entry.target.classList.remove('fadeAnimation')
+    }
+    ) 
+})
+
+observerTwo.observe(document.querySelector('.bioCard'))

@@ -48,19 +48,19 @@
     flex-direction: row;
     gap: 5vmin;
     text-align: center;
-    /* margin: 0 auto; */
 }
+
 #nav-bar > a {
     color: white;
     text-decoration: none;
+    font-size: 2.5vmin;
 }
 
-
-/* education, experience, projects */
 #nav-bar > #links > a {
     color: white;
     text-decoration: none;
-    text-transform: lowercase;
+    font-size: 2.5vmin;
+    /* text-transform: lowercase; */
 }
 
 
@@ -309,6 +309,10 @@ text-align: center;
     /* background-color: gray; */
 }
 
+#projectDiv > a {
+    text-decoration: none;
+}
+
 .project-divs {
     width: 37vmin;
     height: 46.5vmin;
@@ -371,12 +375,18 @@ text-align: center;
 /* Education */
 
 
-
-
-
 /* FOOTER */
+#contact {
+    display: flex;
+    justify-content: space-evenly;
+}
 
 #social-message {
     margin-top: 10vmin;
     text-align: center;
+}
+
+.imgFooter {
+    width: 10vmin;
+    height: 10vmin;
 }
