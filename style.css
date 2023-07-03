@@ -197,6 +197,7 @@
 #aboutMe {
     display: flex;
     gap: 10vmin;
+    width: 120vmin;
 }
 
 #imgCard {
@@ -218,8 +219,6 @@ text-align: center;
     padding-top: 1vmin;
 }
 
-
-
 #imgCard > div > p {
     font-size: 2vmin;
 }
@@ -230,14 +229,19 @@ text-align: center;
    border-radius: 10px;
 }
 
+#bio {
+    width: 60vmin;
+}
 #bio > p {
     color: white;
     font-size: 2.2vmin;
 }
 
-
-
-
+.spanStyle {
+    color: var(--greenBlue);
+    font-weight: bold;
+    letter-spacing: .6px;
+}
 
 
 /* My Work */
