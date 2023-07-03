@@ -155,7 +155,7 @@
 #nameDiv > button {
     width: 14vmin;
     border-radius: 500px;
-    background-color: var(--greenBlue);
+    background-color: var(--orange);
     border: none;
     color: var(--dark);
     padding: 1vmin;
@@ -165,22 +165,32 @@
     margin-top: 1vmin;
 }
 
-#arrow {
-    transform: rotate(25deg);
-    width: 40vmin;
+#mail {
+    /* transform: rotate(25deg); */
+    width: 20vmin;
     margin-left: 30vmin;
-    margin-top: 10vmin;
-    animation-delay: 5s;
-    animation-name: pointing;
+    margin-top: 25vmin;
+    animation-delay: 3s;
+    animation-name: appear;
     animation-fill-mode: forwards;
     animation-duration: 2s;
     animation-iteration-count: 1;
+    opacity: 0;
 }
 
-@keyframes pointing {
-    0% {}
+#mail:hover {
+    cursor: pointer;
+}
+
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
     100% {
-        transform: rotate(35deg)
+        opacity: 1;
+        transform: translate(5vmin, -20vmin) rotate(20deg);
+        
     }
 }
 
@@ -327,6 +337,7 @@ text-align: center;
     height: 3vmin;
     padding-top: 1vmin;
     margin-left: 2vmin;
+    font-size: 2.5vmin;
     /* border-radius: 0 0 5px 5px; */
 }
 
@@ -337,6 +348,7 @@ text-align: center;
     border-radius: 0 0 5px 5px;
     margin-left: 2vmin;
     padding-bottom: 1vmin;
+    font-size: 2vmin;
 }
 
 .img-parent {
@@ -372,7 +384,106 @@ text-align: center;
  
 }
 
-/* Education */
+
+/* Experience */
+
+#experienceTitle {
+    color: white;
+    font-size: 8vmin;
+    text-align: center;
+    padding-top: 25vmin;
+    padding-bottom: 5vmin;
+}
+
+#experienceDiv {
+color: white;
+padding-top: 3vmin;
+}
+
+#cofc {
+    display: flex;
+    flex-direction: row;
+    gap: 2vmin;
+    align-items: end;
+    text-align: left;
+    background-color: var(--blue);
+    width: 50vmin;
+    margin: 0 auto 10vmin auto;
+    border-radius: 5px;
+}
+
+#cofc > * {
+    background-color: var(--blue);
+    /* border-radius: 5px; */
+}
+
+#cofc > h1 {
+    padding-bottom: .5vmin;
+}
+
+#cofc > p {
+    padding-bottom: .5vmin;
+    
+}
+
+#cofc > img {
+    width: 10vmin;
+}
+
+#arrow1 {
+    transform: scaleX(-1) rotate(50deg);
+    width: 40vmin;
+    margin-left: 25vmin;
+    margin-top: -10vmin;
+}
+
+
+#teaching {
+    text-align: center;
+    background-color: gray;
+    width: 40vmin;
+    margin-top: 15vmin;
+    margin-left: 20vmin;
+}
+
+#teaching > img {
+    width: 10vmin;
+}
+
+#arrow2 {
+    transform: rotate(50deg);
+    width: 40vmin;
+    margin-left: 75vmin;
+    margin-top: 0vmin;
+}
+
+#generalAssembly {
+    text-align: center;
+    background-color: gray;
+    width: 40vmin;
+    margin: 0 auto;
+    margin-left: 120vmin;
+}
+
+
+#selfTaught > img {
+    width: 10vmin;
+}
+
+
+#arrow3 {
+    transform: scaleX(-1) rotate(15deg);
+    width: 20vmin;
+    margin-left: 115vmin;
+    margin-top: 10vmin;
+}
+
+#weConnect {
+    position: relative;
+}
+
+
+
 
 
 /* FOOTER */
