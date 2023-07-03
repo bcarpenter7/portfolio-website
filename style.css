@@ -410,6 +410,7 @@ padding-top: 3vmin;
     width: 50vmin;
     margin: 0 auto 10vmin auto;
     border-radius: 5px;
+    height: 10vmin;
 }
 
 #cofc > * {
@@ -427,7 +428,8 @@ padding-top: 3vmin;
 }
 
 #cofc > img {
-    width: 10vmin;
+    width: 15vmin;
+    height: 100%;
 }
 
 #arrow1 {
@@ -439,15 +441,32 @@ padding-top: 3vmin;
 
 
 #teaching {
-    text-align: center;
-    background-color: gray;
-    width: 40vmin;
+    display: flex;
+    flex-direction: row;
+    gap: 2vmin;
+    align-items: end;
+    text-align: left;
+    background-color: var(--blue);
+    width: 50vmin;
     margin-top: 15vmin;
     margin-left: 20vmin;
+    height: 10vmin;
+}
+
+#teaching > h1 {
+    background-color: var(--blue);
+    padding-bottom: .5vmin;
+}
+
+#teaching > p {
+    background-color: var(--blue);
+    padding-bottom: .5vmin;
 }
 
 #teaching > img {
-    width: 10vmin;
+    width: 15vmin;
+    height: 100%;
+    background-color: var(--blue);
 }
 
 #arrow2 {
@@ -458,11 +477,33 @@ padding-top: 3vmin;
 }
 
 #generalAssembly {
-    text-align: center;
-    background-color: gray;
-    width: 40vmin;
+    display: flex;
+    background-color: var(--blue);
+    flex-direction: row;
+    gap: 2vmin;
+    align-items: end;
+    text-align: left;
+    width: 50vmin;
     margin: 0 auto;
     margin-left: 120vmin;
+    height: 10vmin;
+}
+
+#generalAssembly > h1 {
+    background-color: var(--blue);
+    font-size: 2.5vmin;
+    padding-bottom: .5vmin;
+}
+
+#generalAssembly > p {
+    background-color: var(--blue);
+    padding-bottom: .5vmin;
+}
+
+#generalAssembly > img {
+    width: 10vmin;
+    height: 100%;
+    background-color: var(--blue);
 }
 
 
