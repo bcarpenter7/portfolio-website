@@ -35,6 +35,10 @@
     padding: 1vmin;
 }
 
+#nav-bar > div > a:hover {
+    transform: rotate(2deg);
+}
+
 #resumeSpan {
     border: 1px solid var(--greenBlue);
     padding: .5vmin;
@@ -551,6 +555,7 @@ padding-top: 3vmin;
 #footerTitle {
     text-align: center;
     padding-top: 5vmin;
+    font-size: 6vmin;
 }
 #footer > * {
     background-color: var(--greenBlue);
@@ -561,10 +566,26 @@ padding-top: 3vmin;
     padding-top: 1vmin;
 }
 
-#contact > svg {
+#contact > a {
+    text-decoration: none;
+    background-color: var(--greenBlue);
+}
+
+#contact > a > svg {
     background-color: var(--greenBlue);
     width: 10vmin;
     height: 10vmin;
+    text-decoration: none;
+}
+
+#contact > svg:hover {
+    cursor: pointer;
+    transform: rotate(2deg);
+}
+
+#contact > a:hover {
+    cursor: pointer;
+    transform: rotate(2deg);
 }
 
 .imgFooter {
