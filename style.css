@@ -359,7 +359,12 @@ text-align: center;
 }
 
 
-/* My Work */
+
+
+
+
+
+/* My Work / WHAT I HAVE BEEN UP TO / Projects ETC*/
 
 #myWorkTitle {
     color: white;
@@ -433,7 +438,6 @@ text-align: center;
         justify-content: space-between;
     }
     
-   
     
     #workExample {
         margin-right: 40vmin;
@@ -533,6 +537,44 @@ text-align: center;
   height: 3.5vmin;
  
 }
+
+@media only screen and (max-width: 480px){
+
+#projectDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10vmin;  
+    margin: 0 7vmin;
+    /* column-gap: -3vmin; */
+    justify-content: center;
+    margin-top: 10vmin;
+    justify-items: center;
+    /* background-color: gray; */
+}
+
+#projectDiv > a {
+    text-decoration: none;
+}
+
+.project-divs {
+    width: 37vmin;
+    height: 46.5vmin;
+    background-color: var(--blue);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* Experience */
