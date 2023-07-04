@@ -36,7 +36,7 @@
 }
 
 #nav-bar > div > a:hover {
-    transform: rotate(2deg);
+    transform: rotate(1deg);
 }
 
 #resumeSpan {
