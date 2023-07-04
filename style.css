@@ -727,15 +727,14 @@ padding-top: 6vmin;
 @media only screen and (max-width: 480px){
 
 
-#experienceDiv {
-    padding-top: 12vmin;
+    #experienceDiv {
+        padding-top: 12vmin;
     }
     
-#cofc {
+    #cofc, #teaching, #generalAssembly {
         display: flex;
         flex-direction: row;
         gap: 2vmin;
-        /* align-items: start; */
         text-align: left;
         background-color: var(--blue);
         border-radius: 5px;
@@ -743,33 +742,45 @@ padding-top: 6vmin;
         width: 90%;
         margin-left: 5vmin;
         margin-right: 5vmin;
-}
-    
-    
-    #cofc > h1 {
-        height: 90%;
-        /* padding-bottom: .5vmin; */
     }
     
-    #cofc > p {
+    
+    #cofc > h1, #teaching > h1, #generalAssembly > h1 {
         height: 90%;
-        /* padding-bottom: .5vmin; */
-        
     }
     
-    #cofc > img {
+    #cofc > p, #teaching > p, #generalAssembly > p{
+        height: 90%;
+    }
+    
+    #cofc > img, #teaching > img, #generalAssembly > img {
         width: 25vmin;
         height: 100%;
         border-radius: 10px 0 0 10px;
-        /* height: 100%; */
     }
     
     #arrow1 {
-        transform: scaleX(-1) rotate(50deg);
-        width: 40vmin;
-        margin-left: 25vmin;
-        margin-top: -10vmin;
-        opacity: 0;
+        transform: scaleX(-1) rotate(90deg);
+        width: 25vmin;
+        margin-left: 15vmin;
+        margin-top: 5vmin;
+        opacity: 1;
+    }
+
+    #arrow2 {
+        transform: rotate(20deg) scaleY(-1);
+        width: 30vmin;
+        margin-left: 35vmin;
+        margin-top: 10vmin;
+        margin-bottom: 10vmin;
+    }
+
+    #arrow3 {
+        transform: rotate(100deg);
+        width: 20vmin;
+        margin-left: 55vmin;
+        margin-top: 10vmin;
+        margin-bottom: 5vmin;
     }
 
 }
