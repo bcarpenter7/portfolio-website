@@ -20,22 +20,35 @@
 .container {
     width: 95vmin;
     margin: 0 auto;
-
 }
 
 #nav-bar {
     display: flex;
     flex-direction: row;
-    position: relative;
+    /* position: relative; */
     background-color: var(--dark);
     width: 100%;
     height: 7vmin;
     gap: 5vmin;
-    justify-content: left;
+    justify-content: right;
     align-items: center;
-    padding: 1vmin 0;
-    transition: 1s;
+    padding: 1vmin;
 }
+
+#resumeSpan {
+    border: 1px solid var(--greenBlue);
+    padding: .5vmin;
+    border-radius: 5px;
+    color: var(--greenBlue);
+}
+
+#resumeSpan:hover {
+    color: var(--dark);
+    border: 1px solid var(--dark);
+    background-color: var(--greenBlue);
+}
+
+
 
 /* #nav-bar:hover {
     transform: translate(0, -8vmin)
@@ -43,11 +56,12 @@
 
 /* div holding education etc */
 #links {
-    margin-left: 52vmin;
+    /* margin-left: 52vmin; */
     display: flex;
     flex-direction: row;
     gap: 5vmin;
     text-align: center;
+    margin-right: 35vmin;
 }
 
 #nav-bar > a {
@@ -196,13 +210,6 @@
 
 
 /* ABOUT ME SECTION  */
-#aboutMeTitle {
-    color: white;
-    text-align: center;
-    margin-bottom: 5vmin;
-    font-size: 8vmin;
-    padding-top: 15vmin;
-}
 
 #aboutMe {
     display: flex;
@@ -429,6 +436,7 @@ padding-top: 3vmin;
 
 #cofc > img {
     width: 15vmin;
+    border-radius: 10px 0 0 10px;
     height: 100%;
 }
 
@@ -446,6 +454,7 @@ padding-top: 3vmin;
     gap: 2vmin;
     align-items: end;
     text-align: left;
+    border-radius: 5px;
     background-color: var(--blue);
     width: 50vmin;
     margin-top: 15vmin;
@@ -465,6 +474,7 @@ padding-top: 3vmin;
 
 #teaching > img {
     width: 15vmin;
+    border-radius: 10px 0 0 10px;
     height: 100%;
     background-color: var(--blue);
 }
@@ -483,6 +493,7 @@ padding-top: 3vmin;
     gap: 2vmin;
     align-items: end;
     text-align: left;
+    border-radius: 5px;
     width: 50vmin;
     margin: 0 auto;
     margin-left: 120vmin;
@@ -501,6 +512,7 @@ padding-top: 3vmin;
 }
 
 #generalAssembly > img {
+    border-radius: 10px 0 0 10px;
     width: 10vmin;
     height: 100%;
     background-color: var(--blue);
@@ -519,18 +531,87 @@ padding-top: 3vmin;
     margin-top: 10vmin;
 }
 
-#weConnect {
-    position: relative;
+#connectTitle {
+    text-align: center;
+    margin: 5vmin 0;
+    font-size: 8vmin;
 }
-
-
-
 
 
 /* FOOTER */
 #contact {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 2vmin;
+    padding-top: 5vmin;
+    background-color: var(--greenBlue);
+    padding-bottom: 10vmin;
+}
+
+#footerTitle {
+    text-align: center;
+    padding-top: 5vmin;
+}
+#footer > * {
+    background-color: var(--greenBlue);
+}
+
+#footer > h2 {
+    text-align: center;
+    padding-top: 1vmin;
+}
+
+#contact > svg {
+    background-color: var(--greenBlue);
+    width: 10vmin;
+    height: 10vmin;
+}
+
+.imgFooter {
+    width: 10vmin;
+    height: 10vmin;
+}
+
+#resumeSpanFooter {
+    background-color: var(--greenBlue);
+    border: 1px solid var(--dark);
+    padding: .5vmin;
+    border-radius: 5px;
+    height: 3.5vmin;
+    font-size: 3vmin;
+    text-decoration: none;
+}
+
+#resumeSpanFooter:hover {
+    color: var(--greenBlue);
+    background-color: var(--dark);
+}
+
+#anchorResume {
+    text-decoration: none;
+    color: var(--dark);
+    background-color: var(--greenBlue);
+    padding-top: 3vmin;
+}
+
+
+
+
+/* #contact > * > * {
+    background-color: var(--greenBlue);
+    color: var(--greenBlue);
+} */
+
+#profile-link {
+    text-decoration: none;
+    background-color: var(--greenBlue);
+   
+}
+
+#profile-link > img {
+    text-decoration: none;
+    background-color: var(--greenBlue);
+    color: var(--greenBlue);
 }
 
 #social-message {
@@ -538,7 +619,3 @@ padding-top: 3vmin;
     text-align: center;
 }
 
-.imgFooter {
-    width: 10vmin;
-    height: 10vmin;
-}
