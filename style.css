@@ -377,7 +377,7 @@ text-align: center;
  
 
 #bio {
-    width: 60vmin;
+    width: 65vmin;
 }
 #bio > p {
     color: white;
@@ -571,6 +571,8 @@ text-align: center;
  
 }
 
+
+
 @media only screen and (max-width: 480px){
 
 #projectDiv {
@@ -628,7 +630,7 @@ padding-top: 6vmin;
 #cofc {
     display: flex;
     flex-direction: row;
-    gap: 2vmin;
+    gap: 1vmin;
     align-items: end;
     text-align: left;
     background-color: var(--blue);
@@ -663,6 +665,17 @@ padding-top: 6vmin;
     width: 40vmin;
     margin-left: 25vmin;
     margin-top: -10vmin;
+}
+
+#smallTextPath {
+    font-size: 1vmin;
+    width: 9vmin;
+    margin-left: -3vmin;
+   padding: .5vmin;
+}
+
+#smallTextPath > p {
+    background-color: var(--blue);
 }
 
 
@@ -782,7 +795,7 @@ padding-top: 6vmin;
         font-size: 4.5vmin;
     }
     
-    #cofc > p, #teaching > p, #generalAssembly > p{
+    #cofc > p, #teaching > p, #generalAssembly > p {
         height: 90%;
         font-size: 2.5vmin;
     }
@@ -817,7 +830,19 @@ padding-top: 6vmin;
         margin-bottom: 5vmin;
     }
 
+    #smallTextPath {
+        font-size: 2vmin;
+        width: 9vmin;
+        margin-left: -3vmin;
+       padding: .5vmin;
+       background-color: var(--blue);
+    }
+    
+    #smallTextPath > p {
+        background-color: var(--blue);
+    }
 }
+
 
 
 
