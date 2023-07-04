@@ -359,6 +359,38 @@ text-align: center;
     letter-spacing: .6px;
 }
 
+@media only screen and (max-width: 480px){
+
+#aboutMe {
+    gap: 5vmin;
+}
+
+#imgCard {
+    width: 25vmin;
+    height: 50vmin;
+}
+
+#imgCard > img {
+    width: 25vmin;
+    border-radius: 10px;
+ }
+ 
+
+#bio {
+    width: 60vmin;
+}
+#bio > p {
+    color: white;
+    font-size: 3.2vmin;
+    padding-bottom: 5vmin;
+}
+
+.spanStyle {
+    color: var(--greenBlue);
+    font-weight: bold;
+    letter-spacing: .6px;
+}
+}
 
 
 
@@ -747,10 +779,12 @@ padding-top: 6vmin;
     
     #cofc > h1, #teaching > h1, #generalAssembly > h1 {
         height: 90%;
+        font-size: 4.5vmin;
     }
     
     #cofc > p, #teaching > p, #generalAssembly > p{
         height: 90%;
+        font-size: 2.5vmin;
     }
     
     #cofc > img, #teaching > img, #generalAssembly > img {
