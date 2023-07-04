@@ -78,7 +78,6 @@
     color: white;
     text-decoration: none;
     font-size: 2.5vmin;
-    /* text-transform: lowercase; */
 }
 
 @media only screen and (max-width: 1200px){
@@ -103,23 +102,21 @@
 
 @media only screen and (max-width: 800px){
     #nav-bar {
-        display: flex;
-        flex-direction: row;
-        /* position: relative; */
-        background-color: var(--dark);
-        width: 100%;
-        height: 7vmin;
-        gap: 5vmin;
-        justify-content: right;
-        align-items: center;
-        padding: 1vmin;
+        padding-top: 2vmin;
     }
 
     #links {
         margin-right: 5vmin;
     }
-}
 
+    #nav-bar > a {
+        font-size: 3.5vmin;
+    }
+    
+    #nav-bar > #links > a {
+        font-size: 3.5vmin;
+    }
+}
 
 
 
@@ -162,11 +159,6 @@
     animation-name: fadeIn;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-
-    /* -webkit-animation: fadeInStill 2s;
-    -moz-animation: fadeInStill 2s;
-    -o-animation: fadeInStill 2s;
-    -ms-animation: fadeInStill 2s; */
 }
 
 #nameDiv > h2 {
@@ -262,9 +254,6 @@
 
 #welcomeDiv {
     padding-top: 5vmin;
-    /* margin: 0 auto;
-    width: 100%;
-    justify-content: space-between; */
 }
 
 #imgDiv {
@@ -274,7 +263,7 @@
 }
 
 #imgDiv > img {
-    margin-top: 10vmin;
+    margin-top: 7vmin;
     width: 50vmin;
     height: 40vmin;
 }
@@ -282,6 +271,33 @@
 #nameDiv {
     margin-left: 5vmin;
 }
+
+#nameDiv > h1 {
+    font-size: 9vmin;
+
+}
+
+#nameDiv > h2 {
+    font-size: 5vmin;
+    margin-bottom: 2vmin;
+}
+
+#nameDiv > p {
+    color: rgb(194, 193, 193);
+    font-size: 3.2vmin;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translate(25vmin, -20vmin) rotate(20deg);
+        
+    }
+}
+
 
 }
 
@@ -397,6 +413,51 @@ text-align: center;
 #workExample > img {
     width: 50vmin;
 }
+
+
+@media only screen and (max-width: 480px){
+    #myWorkTitle {
+        text-align: left;
+    }
+
+    #work {
+        margin-left: 5vmin;
+    }
+    
+    #myWorkDiv {
+        color: white;
+        display: flex;
+        /* padding-top: 15vmin; */
+        margin: 0 auto;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+   
+    
+    #workExample {
+        margin-right: 40vmin;
+        padding-top: 14vmin;
+    }
+    
+    #workExample > img {
+        width: 50vmin;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Project Section */
 
