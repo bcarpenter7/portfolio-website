@@ -379,6 +379,7 @@ text-align: center;
 #bio > p {
     color: white;
     font-size: 2.2vmin;
+    padding-bottom: 10vmin;
 }
 
 .spanStyle {
@@ -674,8 +675,6 @@ text-align: center;
     background-color: var(--blue);
 }
 
-
-
 #cofc > h1, #teaching > h1, #generalAssembly > h1 {
     font-size: 4.5vmin;
     padding: 0;
@@ -697,6 +696,8 @@ text-align: center;
     text-align: center;
     margin: 5vmin 0;
     font-size: 8vmin;
+    padding-top: 10vmin;
+    padding-bottom: 5vmin;
 }
 
 @media only screen and (max-width: 900px){
