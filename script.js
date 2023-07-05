@@ -35,3 +35,10 @@ const observerTwo = new IntersectionObserver(entries => {
 })
 
 observerTwo.observe(document.querySelector('.bioCard'))
+observerTwo.observe(document.querySelector('#cofc'))
+observerTwo.observe(document.querySelector('#arrow1'))
+observerTwo.observe(document.querySelector('#arrow2'))
+observerTwo.observe(document.querySelector('#arrow3'))
+observerTwo.observe(document.querySelector('#teaching'))
+observerTwo.observe(document.querySelector('#generalAssembly'))
+observerTwo.observe(document.querySelector('#imgCard'))
