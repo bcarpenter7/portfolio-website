@@ -28,11 +28,8 @@
     background-color: var(--dark);
     width: 100%;
     height: 7vmin;
-    position: fixed;
-    /* gap: 5vmin; */
     justify-content: right;
     align-items: center;
-    /* padding: 1vmin; */
 }
 
 
@@ -101,7 +98,6 @@
 @media only screen and (max-width: 760px){
     #nav-bar {
         padding-top: 2vmin;
-        position: fixed;
     }
 
     #links {
@@ -267,41 +263,34 @@
 @media only screen and (max-width: 760px){
 
     #welcomeDiv {
-        padding-top: 20vmin;
+        padding-top: 10vmin;
     }
 
     #imgDiv {
-        width: 70vmin;
+        width: 60vmin;
         height: 80vmin;
         margin-right: 10vmin;
     }
 
     #imgDiv > img {
         margin-top: 8vmin;
-        width: 90vmin;
-        height: 80vmin;
-        margin-left: -10vmin;
+        width: 50vmin;
+        height: 50vmin;
+        margin-left: 0vmin;
     }
 
     #nameDiv {
         margin-left: 5vmin;
     }
-    
+
     #nameDiv > h1 {
         font-size: 12vmin;
-        width: 90vmin;
+        /* width: 30vmin; */
     }
     
     #nameDiv > h2 {
         font-size: 6vmin;
-        margin-bottom: 2vmin;
     }
-    
-    #nameDiv > p {
-        color: rgb(194, 193, 193);
-        font-size: 3.2vmin;
-    }
-
 
 }
 
@@ -461,18 +450,15 @@ text-align: center;
 
 #myWorkTitle {
     color: white;
-    text-align: left;
+    text-align: center;
+    /* margin: 0 auto; */
     font-size: 8vmin;
+    width: 100%;
+    padding-top: 10vmin;
+    /* margin-left: 5vmin; */
 }
 
-#myWorkDiv {
-    color: white;
-    display: flex;
-    /* padding-top: 15vmin; */
-    margin: 0 auto;
-    width: 100%;
-    justify-content: space-between;
-}
+
 
 .hidden {
     opacity: .2;
@@ -494,52 +480,25 @@ text-align: center;
     }
   }
 
-#work {
-    display: flex;
-    flex-direction: column;
-    gap: 1vmin;
-    justify-content: start;
-    padding-top: 9vmin;
-    margin-left: 20vmin;
-}
 
-#workExample {
-    margin-right: 40vmin;
-    padding-top: 14vmin;
-}
 
-#workExample > img {
-    width: 50vmin;
+
+@media only screen and (max-width: 760px){
+    #myWorkTitle {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+
 }
 
 
 @media only screen and (max-width: 480px){
     #myWorkTitle {
-        text-align: left;
+        text-align: center;
     }
 
-    #work {
-        margin-left: 5vmin;
-    }
-    
-    #myWorkDiv {
-        color: white;
-        display: flex;
-        /* padding-top: 15vmin; */
-        margin: 0 auto;
-        width: 100%;
-        justify-content: space-between;
-    }
-    
-    
-    #workExample {
-        margin-right: 40vmin;
-        padding-top: 14vmin;
-    }
-    
-    #workExample > img {
-        width: 50vmin;
-    }
+
 }
 
 
@@ -829,6 +788,82 @@ padding-top: 6vmin;
 }
 
 
+/* Not bad for now but needs fixed */
+@media only screen and (max-width: 760px){
+
+
+    #experienceDiv {
+        padding-top: 12vmin;
+    }
+    
+    #cofc, #teaching, #generalAssembly {
+        display: flex;
+        flex-direction: row;
+        gap: 2vmin;
+        text-align: left;
+        background-color: var(--blue);
+        border-radius: 5px;
+        height: 25vmin;
+        width: 90%;
+        margin-left: 5vmin;
+        margin-right: 5vmin;
+    }
+    
+    
+    #cofc > h1, #teaching > h1, #generalAssembly > h1 {
+        height: 90%;
+        font-size: 4.5vmin;
+    }
+    
+    #cofc > p, #teaching > p, #generalAssembly > p {
+        height: 90%;
+        font-size: 2.5vmin;
+    }
+    
+    #cofc > img, #teaching > img, #generalAssembly > img {
+        width: 25vmin;
+        height: 100%;
+        border-radius: 10px 0 0 10px;
+    }
+    
+    #arrow1 {
+        transform: scaleX(-1) rotate(90deg);
+        width: 25vmin;
+        margin-left: 15vmin;
+        margin-top: 5vmin;
+        opacity: 1;
+    }
+
+    #arrow2 {
+        transform: rotate(20deg) scaleY(-1);
+        width: 30vmin;
+        margin-left: 35vmin;
+        margin-top: 10vmin;
+        margin-bottom: 10vmin;
+    }
+
+    #arrow3 {
+        transform: rotate(100deg);
+        width: 20vmin;
+        margin-left: 55vmin;
+        margin-top: 10vmin;
+        margin-bottom: 5vmin;
+    }
+
+    #smallTextPath {
+        font-size: 2vmin;
+        width: 9vmin;
+        margin-left: -3vmin;
+       padding: .5vmin;
+       background-color: var(--blue);
+    }
+    
+    #smallTextPath > p {
+        background-color: var(--blue);
+    }
+}
+
+
 @media only screen and (max-width: 480px){
 
 
@@ -929,10 +964,6 @@ padding-top: 6vmin;
     /* color: var(--blue); */
 }
 
-#footerEmail {
-    /* color: var(--dark); */
-}
-
 #footer > * {
     background-color: var(--greenBlue);
 }
@@ -992,13 +1023,6 @@ padding-top: 6vmin;
 }
 
 
-
-
-/* #contact > * > * {
-    background-color: var(--greenBlue);
-    color: var(--greenBlue);
-} */
-
 #profile-link {
     text-decoration: none;
     background-color: var(--greenBlue);
@@ -1016,3 +1040,7 @@ padding-top: 6vmin;
     text-align: center;
 }
 
+
+@media only screen and (max-width: 760px){
+
+}
