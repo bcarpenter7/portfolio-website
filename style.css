@@ -27,7 +27,7 @@
     flex-direction: row;
     /* position: relative; */
     background-color: var(--dark);
-    width: 100%;
+    width: 95%;
     height: 7vmin;
     gap: 5vmin;
     justify-content: right;
@@ -313,7 +313,7 @@
 #aboutMe {
     display: flex;
     gap: 10vmin;
-    width: 120vmin;
+    width: 95vmin;
 }
 
 #imgCard {
