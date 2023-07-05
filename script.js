@@ -29,7 +29,7 @@ const observerTwo = new IntersectionObserver(entries => {
             // e.target.classList.remove('hidden')
             return
         }
-        entry.target.classList.remove('fadeAnimation')
+        // entry.target.classList.remove('fadeAnimation')
     }
     ) 
 })

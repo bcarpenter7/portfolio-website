@@ -28,6 +28,7 @@
     background-color: var(--dark);
     width: 100%;
     height: 7vmin;
+    position: fixed;
     /* gap: 5vmin; */
     justify-content: right;
     align-items: center;
@@ -82,6 +83,7 @@
     #nav-bar {
         display: flex;
         flex-direction: row;
+        
         background-color: var(--dark);
         width: 100%;
         height: 7vmin;
@@ -96,8 +98,27 @@
     }
 } 
 
+@media only screen and (max-width: 760px){
+    #nav-bar {
+        padding-top: 2vmin;
+        position: fixed;
+    }
 
-@media only screen and (max-width: 800px){
+    #links {
+        margin-right: 5vmin;
+    }
+
+    #nav-bar > a {
+        font-size: 3.5vmin;
+    }
+    
+    #nav-bar > #links > a {
+        font-size: 3.5vmin;
+    }
+}
+
+
+@media only screen and (max-width: 480px){
     #nav-bar {
         padding-top: 2vmin;
     }
@@ -243,12 +264,51 @@
     }
 }
 
+@media only screen and (max-width: 760px){
 
+    #welcomeDiv {
+        padding-top: 20vmin;
+    }
+
+    #imgDiv {
+        width: 70vmin;
+        height: 80vmin;
+        margin-right: 10vmin;
+    }
+
+    #imgDiv > img {
+        margin-top: 8vmin;
+        width: 90vmin;
+        height: 80vmin;
+        margin-left: -10vmin;
+    }
+
+    #nameDiv {
+        margin-left: 5vmin;
+    }
+    
+    #nameDiv > h1 {
+        font-size: 12vmin;
+        width: 90vmin;
+    }
+    
+    #nameDiv > h2 {
+        font-size: 6vmin;
+        margin-bottom: 2vmin;
+    }
+    
+    #nameDiv > p {
+        color: rgb(194, 193, 193);
+        font-size: 3.2vmin;
+    }
+
+
+}
 
 @media only screen and (max-width:480px){
 
 #welcomeDiv {
-    padding-top: 5vmin;
+    padding-top: 10vmin;
 }
 
 #imgDiv {
@@ -270,7 +330,7 @@
 
 #nameDiv > h1 {
     font-size: 9vmin;
-
+    width: 50vmin;
 }
 
 #nameDiv > h2 {
@@ -282,6 +342,11 @@
     color: rgb(194, 193, 193);
     font-size: 3.2vmin;
 }
+
+
+
+
+
 
 @keyframes appear {
     0% {
