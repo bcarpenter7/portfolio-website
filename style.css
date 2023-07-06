@@ -87,6 +87,7 @@
     padding-top: 11vmin;
     margin: 0 auto;
     width: 100%;
+    gap: 5vmin;
     justify-content: space-between;
 }
 
@@ -208,6 +209,7 @@
 @media only screen and (max-width: 1700px){
     #nameDiv {
         margin-left: 10vmin;
+
     }
 
     #imgDiv {
