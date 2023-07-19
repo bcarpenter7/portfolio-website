@@ -67,13 +67,12 @@
 #nav-bar > a {
     color: white;
     text-decoration: none;
-    font-size: 3.5vmin;
 }
 
 #nav-bar > #links > a {
     color: white;
     text-decoration: none;
-    font-size: 3.5vmin;
+    font-size: 3vmin;
 }
 
 
@@ -447,20 +446,18 @@ text-align: center;
 
 /* My Work / WHAT I HAVE BEEN UP TO / Projects ETC*/
 
-#myWorkTitle {
+#myWorkTitle, #featuredTitle {
     color: white;
     text-align: center;
-    /* margin: 0 auto; */
     font-size: 8vmin;
     width: 100%;
     padding-top: 10vmin;
-    /* margin-left: 5vmin; */
 }
 
 
 
 .hidden {
-    opacity: .2;
+    /* opacity: .2; */
 }
 
 @keyframes fadeEnter {
@@ -474,7 +471,7 @@ text-align: center;
 
 @media (prefers-reduced-motion: no-preference) {
     .fadeAnimation {
-      animation: fadeEnter 3s 1;
+      animation: fadeEnter 4s 1;
       animation-fill-mode: forwards;
     }
   }
@@ -841,3 +838,77 @@ text-align: center;
     width: 98vmin;
 }
 
+
+#featuredDiv {
+    margin-top: 5vmin;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+/* FEATURED PROJECT */
+
+
+.featured-project {
+    width: 50vmin;
+    height: 65vmin;
+    background-color: var(--blue);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.featured-project > h3 {
+    color:white;
+    background-color: var(--blue);
+    height: 3vmin;
+    padding-top: 1vmin;
+    margin-left: 2vmin;
+    font-size: 2.5vmin;
+}
+
+.featured-project > h4 {
+    color:white;
+    background-color: var(--blue);
+    height: 3vmin;
+    border-radius: 0 0 5px 5px;
+    margin-left: 2vmin;
+    padding-bottom: 1vmin;
+    font-size: 2vmin;
+}
+
+.img-parent {
+    width: 50vmin;
+    background-color: var(--blue);
+    overflow: hidden;
+}
+
+.featured-project > .img-parent > img {
+    width: 100%;
+    height: 50vmin;
+    border-radius: 5px 5px 0 0;
+    transition: 0.5s all ease-in-out;
+}
+
+
+.featured-project:hover .project-img {
+    transform: scale(1.1);
+}
+
+.icons {
+    background-color: var(--blue);
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: .5vmin;
+}
+
+.icons > img {
+  background-color: var(--blue);
+  fill: white;
+  color: white;
+  height: 3.5vmin;
+ 
+}  
